@@ -5,7 +5,7 @@ import MySelect from './UI/select/MySelect'
 const PostFilter = ({ filter, setFilter }) => {
     return (
         <div>
-            <MyInput value={filter.query} type='text' onChange={e => setFilter({ ...filter, query: e.target.value })} />
+            <MyInput value={filter.query} placeholder={'...Поиск'} type='text' onChange={e => setFilter({ ...filter, query: e.target.value })} />
             <MySelect
                 value={filter.sort}
                 onChange={selectedSort => setFilter({ ...filter, sort: selectedSort })}
